@@ -5,7 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Condensed&display=swap&subset=cyrillic"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/slick.css" />
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
@@ -18,7 +23,7 @@
 			<nav class="menu">
 				<ul class="menu__list">
 					<li class="menu__list-item">
-						<a href="#" class="menu__list-link">О нас</a>
+						<a href="#" class="menu__list-link menu__list--active">О нас</a>
 					</li>
 					<li class="menu__list-item">
 						<a href="#" class="menu__list-link"> Дома</a>
@@ -32,8 +37,39 @@
 				</ul>
 			</nav>
 		</header>
+		<section class="slider">
+			<div
+				class="slider__item"
+				style="background-image: url(images/slider-item.jpg);"
+			></div>
+			<div
+				class="slider__item"
+				style="background-image: url(images/slider-item.jpg);"
+			></div>
+			<div
+				class="slider__item"
+				style="background-image: url(images/slider-item.jpg);"
+			></div>
+		</section>
+
+		<section class="search">
+			<div class="search__inner">
+				<form class="search__form">
+					<label class="search__form-label">Поиск Аппартаментов</label>
+					<input
+						type="text"
+						class="search__form-input"
+						placeholder="Введите город"
+					/>
+					<button class="search__form-btn" type="submit">Найти</button>
+				</form>
+			</div>
+		</section>
+
+		<section class="popular"></section>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/slick.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
